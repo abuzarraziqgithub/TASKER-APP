@@ -3,3 +3,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  overflow: hidden;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+}
+.toDoApp {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: aquamarine;
+}
+.input-addBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  width: 80%;
+  height: 10vh;
+}
+#toDoInput {
+  margin-top: 5%;
+  width: 35%;
+  height: 4vh;
+}
+#addBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  width: 7%;
+  margin-left: 3%;
+  height: 4vh;
+}
+.list-data {
+  background-color: blue;
+  width: 80%;
+  height: 50vh;
+}
