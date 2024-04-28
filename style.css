@@ -50,4 +50,18 @@ body {
   background-color: blue;
   width: 80%;
   height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+.ul-list {
+  margin-top: 5%;
+  border: 1px dotted whitesmoke;
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  height: 4.5vh;
+  list-style: none;
 }
