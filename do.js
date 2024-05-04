@@ -1,33 +1,33 @@
 "use strict";
-// DOCUMENT ELEMENTS
-const inputData = document.getElementById("toDoInput");
-const addBtn = document.getElementById("addBtn");
-const listingData = document.querySelector(".list-data");
+/*
+1-> SELECTED HTML ELEMENTS.
+2-> CREATED A FUNCTION.
+3-> CREATED HTML ELEMEENTS.
+4-> CREATED EVENT LISTENER FOR ADD BUTTON
+5-> PUUTING INPUT DATA INTO H3
+*/
 
-// CREATING HTML ELEMENTS:
-const ul = document.createElement("ul");
-const li = document.createElement("li");
-const h3 = document.createElement("h3");
+// SELECTING HTML ELEMENTS.
+const inputArea = document.getElementById("input-data");
+const addButton = document.getElementById("addBtn");
+const listingContainer = document.querySelector(".listing");
+// CREATING A FUNCTION WITH THE NAME TODO.
+const toDo = function () {
+  // CREATING HTML UL,LI,H3
+  const ul = document.createElement("ul");
+  const li = document.createElement("li");
+  const h3 = document.createElement("h3");
 
-// ADDING TASK FUNCTION
-const addTask = function () {
-  ul.classList.add("ul-list");
-  ul.appendChild(li);
+  if (inputArea.value === "") {
+    return inputArea.value.trim();
+  }
+
+  h3.innerHTML = inputArea.value;
   li.appendChild(h3);
-  h3.innerText = inputData.value;
-  listingData.appendChild(ul);
+  ul.appendChild(li);
+  listingContainer.appendChild(ul);
 
-  inputData.value = "";
+  inputArea.value = "";
 };
 
-h3.style.cursor = "pointer";
-addBtn.addEventListener("click", addTask);
-
-h3.addEventListener("dblclick", function () {
-  h3.style.textDecoration = "line-through";
-
-  setTimeout(function () {
-    li.style.listStyle = "none";
-    h3.innerText = "";
-  }, 1000);
-});
+addButton.addEventListener("click", toDo);

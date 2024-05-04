@@ -3,68 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  overflow: hidden;
-}
 .main-container {
-  display: flex;
-  justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: aqua;
-}
-.toDoApp {
   display: flex;
-  justify-content: first baseline;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  width: 50%;
-  height: 50vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background-color: aquamarine;
 }
-.input-addBtn {
+.input-button {
+  margin-top: 10%;
+  /* background-color: black; */
+  width: 50%;
+  gap: 10px;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: beige;
-  width: 80%;
-  height: 10vh;
 }
-#toDoInput {
-  margin-top: 5%;
+.listing {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 2%;
   width: 35%;
-  height: 4vh;
+  height: 3.5vh;
+  /* position: relative; */
+}
+.unordered-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h3 {
+  margin-top: 5%;
+}
+.delete-button {
+  background-color: blue;
+  width: 15%;
+}
+#input-data {
+  width: 50%;
+  height: 3.5vh;
 }
 #addBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%;
-  width: 7%;
-  margin-left: 3%;
-  height: 4vh;
-}
-.list-data {
-  background-color: blue;
-  width: 80%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-.ul-list {
-  margin-top: 5%;
-  border: 1px dotted whitesmoke;
-  border-radius: 10px;
-  width: 80%; /* Adjusted width for better visibility */
-  padding-left: 20px;
-  list-style: none; /* Remove bullet points */
-  color: #ffffff;
-  background-color: brown;
-  display: block; /* Change to block */
-}
-
-.ul-list li {
-  margin-bottom: 10px; /* Add some spacing between tasks */
 }

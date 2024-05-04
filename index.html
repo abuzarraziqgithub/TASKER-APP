@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="main-container">
-      <div class="toDoApp">
-        <div class="input-addBtn">
-          <input type="text" id="toDoInput" />
-          <button id="addBtn">+</button>
-        </div>
-        <div class="list-data">
-          <!-- Tasks will be dynamically added here -->
-        </div>
+    <main class="main-container">
+      <div class="input-button">
+        <input type="text" id="input-data" />
+        <button id="addBtn">Add Task</button>
       </div>
-    </div>
 
-    <!-- <script src="./do.js"></script> -->
-    <script src="./gpt.js"></script>
+      <div class="listing">
+        <ul class="unordered-list">
+          <li class="list-item">
+            <h3>Hello World</h3>
+          </li>
+        </ul>
+        <button class="delete-button">Delete</button>
+      </div>
+    </main>
+
+    <script src="./do.js"></script>
   </body>
 </html>
