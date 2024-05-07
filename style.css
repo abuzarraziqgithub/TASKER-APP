@@ -11,7 +11,9 @@
   background-color: aqua;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 .to-do-app .head-section {
   background-color: beige;
@@ -48,4 +50,31 @@
   background-color: aqua;
   height: 35px;
   width: 35px;
+}
+
+/* CONTENT SECTION */
+.list-parent-div {
+  background-color: cadetblue;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.text-content {
+  background-color: azure;
+}
+.list-parent-div #content-checkbox {
+  width: 35px;
+  height: 25px;
+}
+.list-parent-div #content-delete-btn {
+  width: 55px;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
 }
