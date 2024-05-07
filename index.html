@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasker</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <main class="main-container">
-      <div class="input-button">
-        <input type="text" id="input-data" />
-        <button id="addBtn">Add Task</button>
-      </div>
-
-      <div class="listing">
-        <ul class="unordered-list">
-          <li class="list-item">
-            <h3>Hello World</h3>
-          </li>
-        </ul>
-        <button class="delete-button">Delete</button>
+    <main class="to-do-app">
+      <!-- Header Area -->
+      <div class="head-section">
+        <button type="button" id="cancel-btn">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+        <input type="text" id="main-input" />
+        <button type="button" id="add-Btn">
+          <span class="material-symbols-outlined"> add </span>
+        </button>
       </div>
     </main>
-
     <script src="./do.js"></script>
   </body>
 </html>
